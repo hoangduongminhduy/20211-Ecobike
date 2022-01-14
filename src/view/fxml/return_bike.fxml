@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutY="100.0" prefHeight="542.0" prefWidth="1366.0">
+         <children>
+            <Button onMouseClicked="#cancelReturnBike" layoutY="6.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="145.0" style="-fx-background-color: #fff;" text="Quay lại" textFill="#178feb">
+               <graphic>
+                  <ImageView fitHeight="31.0" fitWidth="27.0">
+                     <image>
+                        <Image url="@back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Button>
+            <Text fx:id="returnBikeHeader" layoutX="59.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin trả xe - XXX.MA_XE.XXX">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <Pane layoutX="67.0" layoutY="159.0" prefHeight="50.0" prefWidth="362.0">
+               <children>
+                  <Text layoutX="2.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian bắt đầu:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="startTime" layoutX="173.0" layoutY="1.0" prefHeight="44.0" prefWidth="187.0" text="7:30 11-11-2021">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="68.0" layoutY="211.0" prefHeight="50.0" prefWidth="362.0">
+               <children>
+                  <Text layoutX="2.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian kết thúc:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="endTime" layoutX="173.0" layoutY="7.0" prefHeight="44.0" prefWidth="250" text="9:00 11-11-2021">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="72.0" layoutY="277.0" prefHeight="50.0" prefWidth="374.0">
+               <children>
+                  <Text layoutX="-3.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian sử dụng:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="useTime" layoutX="168.0" layoutY="-2.0" prefHeight="44.0" prefWidth="250" text="1 giờ 30 phút">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="508.0" layoutY="285.0" prefHeight="50.0" prefWidth="374.0">
+               <children>
+                  <Text layoutX="2.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phí sử dụng:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="useCost" layoutX="173.0" layoutY="1.0" prefHeight="44.0" prefWidth="187.0" text="99.999 VND">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="513.0" layoutY="339.0" prefHeight="50.0" prefWidth="374.0">
+               <children>
+                  <Text layoutX="69.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="vatCost" layoutX="173.0" layoutY="1.0" prefHeight="44.0" prefWidth="187.0" text="9.999 VND">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+            <Pane layoutX="504.0" layoutY="393.0" prefHeight="50.0" prefWidth="374.0">
+               <children>
+                  <Text layoutX="69.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Hyperlink fx:id="totalCost" layoutX="173.0" layoutY="1.0" prefHeight="44.0" prefWidth="187.0" text="109.999 VND" textFill="#ff4343">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Button onMouseClicked="#cancelReturnBike" layoutX="527.0" layoutY="658.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #BBB;" text="HỦY" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button onMouseClicked="#confirmReturnBike" layoutX="703.0" layoutY="658.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="200.0" style="-fx-background-color: #e56b2e;" text="THANH TOÁN" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="100.0" prefWidth="1366.0" style="-fx-background-color: #f4f4f3;">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="64.0" layoutX="59.0" layoutY="26.0">
+               <image>
+                  <Image url="@../../../assets/images/Logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#e56b2e" layoutX="62.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRẢ XE" x="75.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+            </Text>
+            <Button layoutX="1110.0" layoutY="14.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="221.0" style="-fx-background-color: #f4f4f3;" text="HOÀNG ĐẠI HẢI" textFill="#e56b2e">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

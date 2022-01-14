@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="100.0" prefWidth="1366.0" style="-fx-background-color: #f4f4f3;">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="64.0" layoutX="59.0" layoutY="26.0">
+               <image>
+                  <Image url="@../../asset/img/logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="#e56b2e" layoutX="62.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THANH TOÁN" x="75.0">
+               <font>
+                  <Font name="Segoe UI Bold" size="48.0" />
+               </font>
+            </Text>
+            <Button layoutX="1110.0" layoutY="14.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="221.0" style="-fx-background-color: #f4f4f3;" text="HOÀNG ĐẠI HẢI" textFill="#e56b2e">
+               <font>
+                  <Font name="Segoe UI Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button layoutX="1213.0" layoutY="57.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="111.0" style="-fx-background-color: #f4f4f3;" text="Đăng xuất" textFill="#2f66e2">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </Button>
+            <Line endX="100.0" layoutX="1215.0" layoutY="87.0" startX="7.5999755859375" startY="7.62939453125E-6" stroke="#2f66e2" />
+         </children>
+      </Pane>
+      <HBox layoutY="100.0" prefHeight="579.0" prefWidth="1366.0">
+         <children>
+            <Pane prefHeight="579.0" prefWidth="539.0">
+               <children>
+                  <Text layoutX="-16.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THÔNG TIN TÀI KHOẢN:" x="75.0" y="80.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="70.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã thẻ:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="cardCode" layoutX="70.0" layoutY="145.0" prefHeight="51.0" prefWidth="438.0" text="kscq2_group8_2021">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#onBackBtn" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: #fff;" text="Quay lại" textFill="#178feb">
+                     <graphic>
+                        <ImageView fitHeight="31.0" fitWidth="27.0">
+                           <image>
+                              <Image url="@../../../assets/images/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="69.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên chủ thẻ:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="owner" layoutX="69.0" layoutY="252.0" prefHeight="51.0" prefWidth="438.0" text="Group 8">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="69.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CVV:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="cvv" layoutX="69.0" layoutY="360.0" prefHeight="51.0" prefWidth="438.0" text="924">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+                  <Text layoutX="69.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày hết hạn:">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="expiredDate" layoutX="69.0" layoutY="471.0" prefHeight="51.0" prefWidth="438.0" text="11/25">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </Pane>
+            <Pane prefHeight="579.0" prefWidth="594.0">
+               <children>
+                  <Text layoutX="-16.0" layoutY="7.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THÔNG TIN THANH TOÁN:" x="75.0" y="80.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <GridPane layoutX="59.0" layoutY="132.0" prefHeight="364.0" prefWidth="565.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.59996337890624" minWidth="10.0" prefWidth="213.59996337890624" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="378.13337402343745" minWidth="10.0" prefWidth="288.0000366210937" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="195.86665039062495" minWidth="4.53326416015625" prefWidth="63.4000244140625" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tiền cọc" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tiền thuê xe" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Được hoàn" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thành tiền" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold Italic" size="26.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Khách hàng">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mã khách hàng" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hoàng Đại Hải" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KH0001" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="depositAmountTF" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="258.8353729248047" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="rentAmountTF" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="258.8353729248047" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="refundAmountTF" fill="#26c714" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="258.8353729248047" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="lastAmountTF" fill="#0019ff" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="258.8353729248047" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VND" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VND" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VND" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="VND" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </GridPane>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+      <Button fx:id="cancelBtn" layoutX="492.0" layoutY="715.0" mnemonicParsing="false" onAction="#onCancelBtn" prefHeight="34.0" prefWidth="169.0" style="-fx-background-color: #BBB;" text="HỦY" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="payBtn" layoutX="706.0" layoutY="715.0" mnemonicParsing="false" onAction="#onPayBtn" prefHeight="38.0" prefWidth="169.0" style="-fx-background-color: #e56b2e;" text="THANH TOÁN" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
